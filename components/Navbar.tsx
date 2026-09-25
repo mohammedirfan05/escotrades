@@ -18,7 +18,7 @@ export function Navbar() {
     <nav className="fixed top-4 sm:top-5 inset-x-0 z-50 flex flex-col items-center px-4 pointer-events-none">
       {/* Compact Minimal Pill Container */}
       <div className="pointer-events-auto flex items-center justify-between gap-3 sm:gap-5 px-3 sm:px-4 py-1.5 rounded-full bg-[#0a0d0c]/90 backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.85),0_0_20px_rgba(0,102,255,0.12)] transition-all">
-        
+
         {/* Brand Section (Logo + Name + Divider) */}
         <div className="flex items-center gap-2.5 shrink-0">
           <a href="#" className="flex items-center gap-2 group">

@@ -19,27 +19,24 @@ export function Hero() {
           {/* Status Badges Row */}
           <div className="flex flex-wrap items-center gap-2.5 mb-8">
             <div className="px-3 py-1 rounded-md bg-[#10141a] border border-white/10 text-[11px] font-mono tracking-wider text-slate-300 uppercase">
-              NASDAQ FUTURES / MNQ
+              NQ &amp; MNQ FUTURES
             </div>
 
             <div className="px-3 py-1 rounded-md bg-[#10141a] border border-white/10 text-[11px] font-mono tracking-wider text-slate-300 uppercase flex items-center gap-2">
-              <span className="text-slate-500">STATUS:</span>
-              <span className="flex items-center gap-1.5 text-emerald-400 font-semibold">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                MONITORING NY OPEN
-              </span>
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="text-emerald-400 font-semibold">ICT &bull; IFVG &bull; PO3</span>
             </div>
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[76px] font-bold tracking-tight text-white leading-[1.05] font-sans mb-6">
-            Investigated before <br />
-            <span className="text-white">it&apos;s a problem</span>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[76px] font-black tracking-tight text-white leading-[1.02] font-sans mb-6">
+            LEARN THE MODEL. <br />
+            <span className="text-white">GET FUNDED.</span>
           </h1>
 
           {/* Subhead */}
           <p className="text-lg sm:text-xl text-slate-300 max-w-xl leading-relaxed mb-10 font-sans">
-            Navigate every Nasdaq session with real-time liquidity detection, disciplined risk management, and live Discord trade execution.
+            Free NQ education built on ICT, IFVG &amp; PO3 — plus the best prop firm discounts with code <span className="text-white font-bold underline decoration-blue-500 underline-offset-4">ESCO</span>.
           </p>
 
           {/* Primary Action Button */}
