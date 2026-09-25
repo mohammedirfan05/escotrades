@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { BRAND } from "@/app/data/brand";
-import { CopyCodeButton } from "./CopyCodeButton";
 import { ChevronRight, Menu, X } from "lucide-react";
 
 export function Navbar() {
@@ -16,105 +16,89 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-4 sm:top-5 inset-x-0 z-50 flex flex-col items-center px-4 pointer-events-none">
-      {/* Pill-Shaped Navigation Bar Container */}
-      <div className="pointer-events-auto w-full max-w-4xl flex items-center justify-between gap-3 sm:gap-6 px-3.5 sm:px-5 py-2 rounded-full bg-[#0a0d0c]/90 backdrop-blur-xl border border-[#202723] shadow-[0_12px_40px_rgba(0,0,0,0.8),0_0_0_1px_rgba(255,255,255,0.06)] transition-all">
+      {/* Compact Minimal Pill Container */}
+      <div className="pointer-events-auto flex items-center justify-between gap-3 sm:gap-5 px-3 sm:px-4 py-1.5 rounded-full bg-[#0a0d0c]/90 backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.85),0_0_20px_rgba(0,102,255,0.12)] transition-all">
         
-        {/* Brand Section (Icon + Name + Divider) */}
-        <div className="flex items-center gap-3 shrink-0">
-          <a href="#" className="flex items-center gap-2.5 group">
-            {/* Esco Futuristic Emblem */}
-            <div className="w-7 h-7 rounded-lg bg-[#0e1411] border border-[#0066FF]/60 flex items-center justify-center shadow-[0_0_12px_rgba(0,102,255,0.35)] group-hover:border-[#00D2FF] group-hover:shadow-[0_0_16px_rgba(0,210,255,0.5)] transition-all">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4 text-[#00D2FF]"
-              >
-                <path
-                  d="M4 6H13M4 12H10M4 18H13"
-                  stroke="currentColor"
-                  strokeWidth="2.4"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M16 6L20 18M20 6L16 18"
-                  stroke="#0066FF"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                />
-              </svg>
+        {/* Brand Section (Logo + Name + Divider) */}
+        <div className="flex items-center gap-2.5 shrink-0">
+          <a href="#" className="flex items-center gap-2 group">
+            <div className="w-5 h-5 sm:w-6 sm:h-6 relative flex items-center justify-center">
+              <Image
+                src="/assets/logo.png"
+                alt="Esco Trades Logo"
+                width={24}
+                height={24}
+                className="w-full h-full object-contain transition-transform duration-200 group-hover:scale-105"
+                priority
+              />
             </div>
 
-            {/* Brand Title: Esco Trades */}
-            <span className="font-sans font-bold text-sm sm:text-base tracking-tight text-[#EDEDED] group-hover:text-white transition-colors">
+            <span className="font-sans font-bold text-xs sm:text-sm tracking-tight text-white group-hover:text-slate-200 transition-colors">
               Esco Trades
             </span>
           </a>
 
-          {/* Thin Vertical Divider (as shown in reference) */}
-          <div className="hidden md:block w-[1px] h-4 bg-[#262f2a]" />
+          {/* Thin Vertical Divider */}
+          <div className="hidden md:block w-[1px] h-3.5 bg-white/15 ml-0.5" />
         </div>
 
         {/* Center Nav Links (Desktop) */}
-        <div className="hidden md:flex items-center gap-6 text-xs sm:text-sm font-sans text-[#8E9590]">
+        <div className="hidden md:flex items-center gap-5 text-xs font-sans text-slate-300">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="hover:text-[#EDEDED] transition-colors py-1"
+              className="hover:text-white transition-colors py-0.5 font-medium"
             >
               {link.name}
             </a>
           ))}
-
-          {/* Code ESCO quick-copy pill */}
-          <CopyCodeButton code="ESCO" variant="navbar" className="hidden lg:inline-flex" />
         </div>
 
-        {/* Right CTA Button Group */}
+        {/* Right CTA Button Group with Glowing Border */}
         <div className="flex items-center gap-2">
-          {/* Main Glowing Capsule Button (Direct reference match) */}
+          {/* Glowing Border Pill Button */}
           <a
             href={BRAND.discordUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 rounded-full bg-gradient-to-b from-[#0066FF] to-[#0047cc] hover:from-[#0077ff] hover:to-[#0055dd] text-white text-xs sm:text-sm font-semibold tracking-wide border border-[#38bdf8]/40 shadow-[0_0_20px_rgba(0,102,255,0.5),inset_0_1px_1px_rgba(255,255,255,0.35)] hover:shadow-[0_0_30px_rgba(0,102,255,0.75)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+            className="group relative inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-1.5 rounded-full bg-gradient-to-b from-[#0055ff] to-[#0038b8] hover:from-[#0066ff] hover:to-[#0047cc] text-white text-[11px] sm:text-xs font-semibold tracking-wide border border-[#00D2FF] shadow-[0_0_15px_rgba(0,210,255,0.7),inset_0_0_8px_rgba(0,210,255,0.35)] hover:shadow-[0_0_25px_rgba(0,210,255,0.95),inset_0_0_12px_rgba(0,210,255,0.5)] hover:scale-105 active:scale-95 transition-all duration-200"
           >
             <span>Join Discord</span>
-            <ChevronRight className="w-4 h-4 text-white/90 transition-transform group-hover:translate-x-0.5" />
+            <ChevronRight className="w-3.5 h-3.5 text-white/95 transition-transform group-hover:translate-x-0.5" />
           </a>
 
           {/* Mobile hamburger button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             type="button"
-            className="md:hidden p-1.5 rounded-full bg-[#121714] border border-[#202723] text-[#EDEDED] hover:text-white"
+            className="md:hidden p-1 rounded-full bg-[#121714] border border-white/10 text-white hover:text-slate-200"
             aria-label="Toggle navigation menu"
           >
-            {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
+            {mobileMenuOpen ? <X className="w-3.5 h-3.5" /> : <Menu className="w-3.5 h-3.5" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Drawer (Pill Popover) */}
+      {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="pointer-events-auto mt-2 w-full max-w-sm rounded-2xl bg-[#0a0d0c]/95 backdrop-blur-xl border border-[#202723] p-4 shadow-2xl space-y-3 animate-in fade-in zoom-in-95 duration-150">
-          <div className="flex flex-col space-y-2">
+        <div className="pointer-events-auto mt-2 w-full max-w-xs rounded-2xl bg-[#0a0d0c]/95 backdrop-blur-xl border border-white/10 p-3.5 shadow-2xl space-y-2.5 animate-in fade-in zoom-in-95 duration-150">
+          <div className="flex flex-col space-y-1.5">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 rounded-lg text-sm text-[#8E9590] hover:text-white hover:bg-[#121714] transition-colors"
+                className="px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-white/5 transition-colors"
               >
                 {link.name}
               </a>
             ))}
           </div>
 
-          <div className="pt-2 border-t border-[#1a221e] flex items-center justify-between">
-            <span className="text-xs text-[#8E9590]">Prop Firm Code:</span>
-            <CopyCodeButton code="ESCO" variant="navbar" />
+          <div className="pt-2 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <span>Prop Firm Code:</span>
+            <span className="font-mono font-bold text-[#00D2FF]">ESCO</span>
           </div>
         </div>
       )}
