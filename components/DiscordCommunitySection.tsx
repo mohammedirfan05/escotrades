@@ -15,7 +15,7 @@ export function DiscordCommunitySection() {
       {/* Glow effect */}
       <div className="absolute top-1/3 right-1/4 w-[600px] h-[350px] bg-[#0066FF]/15 blur-[160px] pointer-events-none rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="rounded-3xl bg-gradient-to-b from-[#0e1319] via-[#0b0e0c] to-[#080a09] border border-[#1e2722] p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
           {/* Top badge */}
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8">

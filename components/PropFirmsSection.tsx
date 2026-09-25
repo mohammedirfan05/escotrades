@@ -81,7 +81,7 @@ export function PropFirmsSection() {
 
   return (
     <section id="deals" className="py-24 bg-[#080908] relative border-t border-[#141a17]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl xl:max-w-7xl 2xl:max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
         {/* Section Header */}
         <div className="text-center mb-16">

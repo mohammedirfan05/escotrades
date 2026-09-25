@@ -11,31 +11,31 @@ export function Hero() {
       <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#0066ff]/25 blur-[140px] pointer-events-none rounded-full" />
       <div className="absolute -bottom-20 left-1/4 w-[600px] h-[400px] bg-[#0038aa]/30 blur-[150px] pointer-events-none rounded-full" />
 
-      <div className="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1600px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-center">
         
         {/* Left Column: Left-Aligned Editorial Typography & CTAs */}
         <div className="lg:col-span-7 flex flex-col items-start text-left">
           
           {/* Status Badges Row */}
-          <div className="flex flex-wrap items-center gap-2.5 mb-8">
-            <div className="px-3 py-1 rounded-md bg-[#10141a] border border-white/10 text-[11px] font-mono tracking-wider text-slate-300 uppercase">
+          <div className="flex flex-wrap items-center gap-2.5 mb-6 sm:mb-8">
+            <div className="px-3 py-1 rounded-md bg-[#10141a] border border-white/10 text-[11px] sm:text-xs font-mono tracking-wider text-slate-300 uppercase">
               NQ &amp; MNQ FUTURES
             </div>
 
-            <div className="px-3 py-1 rounded-md bg-[#10141a] border border-white/10 text-[11px] font-mono tracking-wider text-slate-300 uppercase flex items-center gap-2">
+            <div className="px-3 py-1 rounded-md bg-[#10141a] border border-white/10 text-[11px] sm:text-xs font-mono tracking-wider text-slate-300 uppercase flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-emerald-400 font-semibold">ICT &bull; IFVG &bull; PO3</span>
             </div>
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-tight text-white leading-[1.05] font-sans mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] xl:text-[68px] 2xl:text-[76px] font-black tracking-tight text-white leading-[1.04] font-sans mb-6">
             JOIN THE COMMUNITY. <br />
             <span className="text-white">LEARN. TRADE. GET FUNDED.</span>
           </h1>
 
           {/* Subhead */}
-          <p className="text-lg sm:text-xl text-slate-300 max-w-xl leading-relaxed mb-10 font-sans">
+          <p className="text-base sm:text-lg lg:text-xl 2xl:text-2xl text-slate-300 max-w-xl xl:max-w-2xl leading-relaxed mb-8 sm:mb-10 font-sans">
             Free NQ education, real community, and exclusive prop firm deals. Use code <span className="text-white font-bold underline decoration-blue-500 underline-offset-4">ESCO</span>.
           </p>
 
@@ -103,7 +103,7 @@ export function Hero() {
 
         {/* Right Column: Custom Saved Trading Graphic from /assets/replace.png */}
         <div className="lg:col-span-5 relative flex items-center justify-center">
-          <div className="relative w-full max-w-[540px] flex items-center justify-center select-none">
+          <div className="relative w-full max-w-[540px] xl:max-w-[650px] 2xl:max-w-[720px] flex items-center justify-center select-none">
             
             {/* Ambient Platform Radial Spotlight */}
             <div className="absolute inset-0 bg-[#0055ff]/35 blur-3xl rounded-full pointer-events-none" />
