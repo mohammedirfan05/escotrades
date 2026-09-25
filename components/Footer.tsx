@@ -9,7 +9,7 @@ export function Footer() {
       {/* Background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[250px] bg-[#0066FF]/10 blur-[180px] pointer-events-none rounded-full" />
 
-      <div className="max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Editorial Callout */}
         <div className="py-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-3">

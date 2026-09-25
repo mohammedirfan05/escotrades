@@ -78,7 +78,7 @@ export function SocialsSection() {
 
   return (
     <section id="socials" className="py-24 bg-[#080908] relative border-t border-[#161c19]">
-      <div className="max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#181f1c] gap-6">
           <div>
             <span className="text-xs font-mono text-[#00D2FF] uppercase tracking-widest">
