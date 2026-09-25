@@ -41,7 +41,7 @@ export function PropFirmsSection() {
       name: "Alpha Futures",
       subtitle: "Trader-first evaluation & seamless scaling",
       code: "ESCO",
-      link: "https://alpha-futures.com/",
+      link: "https://app.alpha-futures.com/signup/ESCO/",
       // Emerald Green theme matching the reference screenshot
       bgGradient: "from-[#071d17] via-[#05291f] to-[#03140e]",
       borderAccent: "border-[#0d4734]/80 hover:border-[#00e599]/60 hover:shadow-[0_0_30px_rgba(0,229,153,0.2)]",

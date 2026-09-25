@@ -29,14 +29,14 @@ export function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[76px] font-black tracking-tight text-white leading-[1.02] font-sans mb-6">
-            LEARN THE MODEL. <br />
-            <span className="text-white">GET FUNDED.</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-tight text-white leading-[1.05] font-sans mb-6">
+            JOIN THE COMMUNITY. <br />
+            <span className="text-white">LEARN. TRADE. GET FUNDED.</span>
           </h1>
 
           {/* Subhead */}
           <p className="text-lg sm:text-xl text-slate-300 max-w-xl leading-relaxed mb-10 font-sans">
-            Free NQ education built on ICT, IFVG &amp; PO3 — plus the best prop firm discounts with code <span className="text-white font-bold underline decoration-blue-500 underline-offset-4">ESCO</span>.
+            Free NQ education, real community, and exclusive prop firm deals. Use code <span className="text-white font-bold underline decoration-blue-500 underline-offset-4">ESCO</span>.
           </p>
 
           {/* Primary Action Button */}
@@ -78,7 +78,7 @@ export function Hero() {
                 />
               </a>
 
-              <a href="https://alpha-futures.com/" target="_blank" rel="noopener noreferrer" className="h-6 flex items-center">
+              <a href="https://app.alpha-futures.com/signup/ESCO/" target="_blank" rel="noopener noreferrer" className="h-6 flex items-center">
                 <Image
                   src="/assets/alpha-futures.png"
                   alt="Alpha Futures"

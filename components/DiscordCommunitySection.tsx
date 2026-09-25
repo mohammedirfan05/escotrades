@@ -1,15 +1,13 @@
 import React from "react";
-import { ArrowUpRight, CheckCircle2, MessageSquare, Mic, ShieldAlert, Sparkles, Users } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, MessageSquare, Mic, Sparkles } from "lucide-react";
 import { BRAND } from "@/app/data/brand";
 
 export function DiscordCommunitySection() {
   const communityPerks = [
-    "Daily Pre-Market Nasdaq levels & economic calendar briefings (8:30 AM EST)",
-    "Real-time chart markups & opening range liquidity analysis",
-    "Live trade execution commentary during high-volume NY session",
-    "Prop firm evaluation coaching & drawdown risk management",
-    "Post-session trade logs, psychology clinics, and replay breakdowns",
-    "Direct interaction with Esco and serious futures traders",
+    { title: "Daily NQ Live", desc: "Live voice & chart sessions during NY Open" },
+    { title: "Learn The Model", desc: "Master the exact setup framework step by step" },
+    { title: "Active Community", desc: "Interact, ask questions, and share daily charts" },
+    { title: "Free Giveaways", desc: "Regular prop firm account giveaways & perks" },
   ];
 
   return (
@@ -23,12 +21,12 @@ export function DiscordCommunitySection() {
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0066FF]/20 border border-[#0066FF]/40 text-[#00D2FF] text-xs font-mono">
               <MessageSquare className="w-3.5 h-3.5" />
-              <span>PRIMARY TRADING COMMUNITY</span>
+              <span>DISCORD COMMUNITY</span>
             </div>
 
             <div className="flex items-center gap-2 text-xs font-mono text-[#8E9590]">
               <span className="w-2 h-2 rounded-full bg-[#00D2FF] animate-ping" />
-              <span className="text-[#EDEDED]">LIVE TRADING ROOM ACTIVE</span>
+              <span className="text-[#EDEDED]">LIVE NY OPEN SESSIONS</span>
             </div>
           </div>
 
@@ -38,20 +36,23 @@ export function DiscordCommunitySection() {
               <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#EDEDED] uppercase leading-[1.1] mb-6">
                 JOIN ESCO&apos;S <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00D2FF] via-[#0066FF] to-[#60A5FA]">
-                  DISCORD TRADING ROOM
+                  DISCORD COMMUNITY
                 </span>
               </h2>
 
-              <p className="text-base text-[#8E9590] leading-relaxed mb-8">
-                Trade alongside Esco and a disciplined group of futures traders. We cut out the noise to focus strictly on Nasdaq 100 price action, market liquidity, and capital preservation.
+              <p className="text-base text-[#8E9590] leading-relaxed mb-8 max-w-xl">
+                Trade live with Esco, learn the core execution model, interact with other traders, and grow together every single day.
               </p>
 
-              {/* Perks List */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-10">
+              {/* Minimal Perks Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                 {communityPerks.map((perk, idx) => (
-                  <div key={idx} className="flex items-start gap-2.5 text-xs text-[#EDEDED]">
+                  <div key={idx} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#090d0b] border border-[#17221c]">
                     <CheckCircle2 className="w-4 h-4 text-[#00D2FF] shrink-0 mt-0.5" />
-                    <span className="leading-snug text-[#A1A7A2]">{perk}</span>
+                    <div>
+                      <div className="text-xs font-bold text-white font-mono">{perk.title}</div>
+                      <div className="text-xs text-[#8E9590] mt-0.5">{perk.desc}</div>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -82,7 +83,7 @@ export function DiscordCommunitySection() {
                   <div className="flex items-center gap-2.5">
                     <div className="w-3 h-3 rounded-full bg-[#00D2FF]" />
                     <span className="text-xs font-mono font-bold text-[#EDEDED] uppercase">
-                      #esco-live-ny-open
+                      #live-trading-room
                     </span>
                   </div>
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#0066FF]/20 text-[#00D2FF] border border-[#0066FF]/30">
@@ -90,29 +91,29 @@ export function DiscordCommunitySection() {
                   </span>
                 </div>
 
-                {/* Simulated Live Messages */}
+                {/* Clean Discord Preview Messages */}
                 <div className="space-y-3">
                   <div className="p-3.5 rounded-xl bg-[#0e1210] border border-[#1a211e]">
                     <div className="flex items-center justify-between mb-1.5">
                       <span className="text-xs font-bold text-[#00D2FF] font-mono">
-                        ESCO [MOD]
+                        ESCO
                       </span>
-                      <span className="text-[10px] font-mono text-[#585E5A]">08:35 AM</span>
+                      <span className="text-[10px] font-mono text-[#585E5A]">09:15 AM</span>
                     </div>
                     <p className="text-xs text-[#EDEDED] leading-relaxed">
-                      Pre-market bias: Asian session high swept at 8:15. Watching for 9:30 AM open displacement below internal liquidity before considering long entries.
+                      Live in voice for NY Open. Walking through today&apos;s NQ levels and model setup step by step.
                     </p>
                   </div>
 
                   <div className="p-3.5 rounded-xl bg-[#0e1210] border border-[#1a211e]">
                     <div className="flex items-center justify-between mb-1.5">
-                      <span className="text-xs font-bold text-[#EDEDED] font-mono">
-                        MEMBER RECAP
+                      <span className="text-xs font-bold text-[#00E599] font-mono flex items-center gap-1.5">
+                        <Sparkles className="w-3 h-3" /> GIVEAWAYS
                       </span>
-                      <span className="text-[10px] font-mono text-[#585E5A]">10:15 AM</span>
+                      <span className="text-[10px] font-mono text-[#585E5A]">TODAY</span>
                     </div>
-                    <p className="text-xs text-[#8E9590] leading-relaxed">
-                      Followed the 1:2 R:R plan on MNQ today. Locked in target, passed stage 1 of my funded evaluation using code ESCO!
+                    <p className="text-xs text-[#A1A7A2] leading-relaxed">
+                      Free funded account giveaway happening in the community this week. Join voice to enter!
                     </p>
                   </div>
                 </div>
@@ -121,9 +122,9 @@ export function DiscordCommunitySection() {
                 <div className="pt-3 border-t border-[#141b17] flex items-center justify-between text-xs font-mono text-[#8E9590]">
                   <span className="flex items-center gap-1.5 text-[#00D2FF]">
                     <Mic className="w-3.5 h-3.5" />
-                    Live Audio Sessions
+                    Daily Live Voice
                   </span>
-                  <span>NQ / MNQ Focus</span>
+                  <span>NQ / MNQ Community</span>
                 </div>
               </div>
             </div>

@@ -17,17 +17,17 @@ export function Navbar() {
   return (
     <nav className="fixed top-4 sm:top-5 inset-x-0 z-50 flex flex-col items-center px-4 pointer-events-none">
       {/* Compact Minimal Pill Container */}
-      <div className="pointer-events-auto flex items-center justify-between gap-3 sm:gap-5 px-3 sm:px-4 py-1.5 rounded-full bg-[#0a0d0c]/90 backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.85),0_0_20px_rgba(0,102,255,0.12)] transition-all">
+      <div className="pointer-events-auto flex items-center justify-between gap-3 sm:gap-6 px-3.5 sm:px-5 py-2 rounded-full bg-[#0a0d0c]/90 backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.85),0_0_20px_rgba(0,102,255,0.12)] transition-all">
 
         {/* Brand Section (Logo + Name + Divider) */}
-        <div className="flex items-center gap-2.5 shrink-0">
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-5 h-5 sm:w-6 sm:h-6 relative flex items-center justify-center">
+        <div className="flex items-center gap-3 shrink-0">
+          <a href="#" className="flex items-center gap-2.5 group">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 relative flex items-center justify-center shrink-0">
               <Image
                 src="/assets/logo.png"
                 alt="Esco Trades Logo"
-                width={24}
-                height={24}
+                width={40}
+                height={40}
                 className="w-full h-full object-contain transition-transform duration-200 group-hover:scale-105"
                 priority
               />
@@ -39,7 +39,7 @@ export function Navbar() {
           </a>
 
           {/* Thin Vertical Divider */}
-          <div className="hidden md:block w-[1px] h-3.5 bg-white/15 ml-0.5" />
+          <div className="hidden md:block w-[1px] h-4 bg-white/15 ml-0.5" />
         </div>
 
         {/* Center Nav Links (Desktop) */}

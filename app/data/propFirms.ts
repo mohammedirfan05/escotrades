@@ -50,7 +50,7 @@ export const PROP_FIRM_DEALS: PropFirmDeal[] = [
     platforms: ["Tradovate", "NinjaTrader", "TradingView", "Rithmic"],
     evaluationTypes: "50k, 100k, 150k Accounts",
     payoutHighlights: "Transparent drawdown & payout schedule",
-    link: "https://alpha-futures.com/",
+    link: "https://app.alpha-futures.com/signup/ESCO/",
     popular: true,
   },
   {
